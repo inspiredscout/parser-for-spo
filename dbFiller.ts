@@ -1,7 +1,7 @@
 import axios from "axios";
 import { faker } from '@faker-js/faker';
 
-const API = "http://176.57.217.212:1337/api/addProduct"
+const API = "{URL}"
 
 
 const generateRandomProduct = () => {
