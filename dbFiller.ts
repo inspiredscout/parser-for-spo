@@ -1,7 +1,7 @@
 import axios from "axios";
 import { faker } from '@faker-js/faker';
 
-const API = "http://176.57.217.212:1337/api/addProduct"
+const API = "https://spo.ultrapivomode.space/api/product"
 
 
 const generateRandomProduct = () => {
@@ -9,9 +9,9 @@ const generateRandomProduct = () => {
     name: faker.commerce.productName(),
     price: faker.commerce.price(),
     photos: [
-      {url: faker.image.urlPicsumPhotos({ height: 600, width: 600 })},
-      {url: faker.image.urlPicsumPhotos({ height: 600, width: 600 })},
-      {url: faker.image.urlPicsumPhotos({ height: 600, width: 600 })}
+      {url: "https://funik.ru/wp-content/uploads/2018/10/f1fda080713507f02387.jpg"},
+      {url: "https://fanibani.ru/wp-content/uploads/2022/12/134199f94c3700a77c12703a6b4c879a.jpeg"},
+      {url: "https://funik.ru/wp-content/uploads/2018/10/e4254cf201e8a64a25bd.jpg"}
   ],
     description: faker.commerce.productDescription(),
     type: faker.helpers.arrayElement(['Метал', 'Пластик', 'Карбон', 'Мама Никиты']),
