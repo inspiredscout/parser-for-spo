@@ -1,7 +1,7 @@
 import axios from "axios";
 import { faker } from '@faker-js/faker';
 
-const API = "https://spo.ultrapivomode.space/api/product"
+const API = "{URL}"
 
 
 const generateRandomProduct = () => {
